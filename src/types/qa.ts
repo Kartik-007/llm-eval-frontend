@@ -24,3 +24,8 @@ export interface QAExample {
     average_relevance: number
     error_analysis?: string[]
   }
+
+  export const LLM_PROVIDERS = [
+    { label: "ChatGPT", value: "openai" },
+    { label: "Llama", value: "llama" },
+  ] as const

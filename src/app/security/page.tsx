@@ -2,6 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { SecurityTestingSection } from "@/components/security/security-testing-section"
+import { SecurityTestGuide } from "@/components/security/security-test-guide"
 
 export default function SecurityTestingPage() {
   return (
@@ -15,6 +16,9 @@ export default function SecurityTestingPage() {
           Evaluate LLM resistance to security attacks and prompt injections
         </p>
       </div>
+
+      {/* Guide Section */}
+      <SecurityTestGuide />
 
       {/* Main Content */}
       <Tabs defaultValue="injection" className="flex flex-col gap-4">

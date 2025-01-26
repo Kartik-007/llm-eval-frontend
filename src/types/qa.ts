@@ -27,5 +27,5 @@ export interface QAExample {
 
   export const LLM_PROVIDERS = [
     { label: "ChatGPT", value: "openai" },
-    { label: "Llama", value: "llama" },
+    { label: "Llama", value: "huggingface" },
   ] as const
